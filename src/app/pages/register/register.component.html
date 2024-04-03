@@ -1,0 +1,108 @@
+<div id="container">
+    
+    
+
+    <img class="splash_logo"  alt="logo" src="./assets/ic_splash_logo.png">
+
+    <label class="welcome_msg">Welcome</label>
+
+    <label class="details_msg">Proceed with Your Details</label>
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()"> 
+
+        <div>
+            <label class="namelabel">Full Name</label>
+    
+            <input type="text" class="register_name" formControlName="fullname" 
+            [ngClass]="{'is-invalid' : submitted && f['fullname'].errors}" >
+
+            @if(submitted && f['fullname'].errors)
+                {
+                <div>
+                    
+                    @if (f['fullname'].errors['minlength']) {
+                    <div>Fullname is min Length is 3 char</div>
+                    }
+                    @if (f['fullname'].errors['maxlength']) {
+                    <div>Fullname is max Length is 16 char</div>
+                    }
+                    @if (f['fullname'].errors['required']) {
+                        <div>Fullname is required</div>
+                        }
+
+
+                </div>
+                }
+    
+        </div>
+
+        <div class="div_email">
+            <label class="namelabel">Email</label>
+            <input class="text_email" class="register_name" type="text"  formControlName="email" 
+                >
+
+                @if(submitted && f['email'].errors)
+            {
+            <div>
+                
+               
+                @if (f['email'].errors['email']) {
+                    <div>Enter valid email</div>
+                    }
+                
+                @if (f['email'].errors['required']) {
+                    <div>E-mail is required</div>
+                    }
+
+
+            </div>
+            }
+
+        </div>
+    
+        <div>
+            <label class="namelabel">User Name</label>
+    
+            <input type="text" class="register_name" formControlName="username">
+
+            @if(submitted && f['username'].errors)
+                {
+                <div>
+                    
+                   
+                    @if (f['username'].errors['required']) {
+                        <div>Username is required</div>
+                        }
+
+                </div>
+                }
+    
+        </div>
+    
+        <div>
+            <label class="namelabel">Password</label>
+    
+            <input type="text" class="register_name" formControlName="password">
+            @if(submitted && f['password'].errors)
+            {
+            <div>
+                
+               
+                @if (f['password'].errors['required']) {
+                    <div>Password is required</div>
+                    }
+
+            </div>
+            }
+
+    
+        </div>
+        
+    
+        <button class="button_submit" type="submit">Submit</button>
+
+    </form>
+
+    
+
+</div>
