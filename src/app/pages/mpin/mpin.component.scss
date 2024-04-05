@@ -70,10 +70,16 @@
   background-color: transparent !important;
 }
 
-.otp_div {
-
+.otp_filed{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp_div {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-self: center;
 }
