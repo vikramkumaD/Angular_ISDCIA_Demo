@@ -1,0 +1,138 @@
+.main {
+  background: linear-gradient(#FF6F71, #F2445F, #F87058);
+  height: auto;
+  padding-top: 50px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input-field {
+  padding: 10px;
+}
+
+.img-logo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-text {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 37.5px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #FFFFFF;
+
+
+}
+
+
+.mpin-text {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 37.5px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #FFFFFF;
+
+
+}
+
+
+.example-button-row {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.submit-button {
+  background: black !important;
+  color: white !important;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent !important;
+}
+
+.otp_div {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.otp_input {
+  text-align: center;
+  align-items: center;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
+}
+
+.div_login_button{
+  margin-top: 32px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.login_button{
+  text-align: center;
+  border-radius: 16px;
+  width: 200px;
+  border-color: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: black;
+}
+
+.div_or{
+  margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.or{
+  color: white;
+  display: flex;
+}
+
+.div_login{
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row; 
+}
+
+.login_through{
+  color: black;
+  display: flex;
+}

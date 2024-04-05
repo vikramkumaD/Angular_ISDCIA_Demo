@@ -3,6 +3,7 @@ import { SplashScreenComponent } from './pages/splash_screen/splash-screen/splas
 import { DemoComponent } from './pages/demo/demo/demo.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginPageComponent } from './pages/login_page/login-page/login-page.component';
+import { MpinComponent } from './pages/mpin/mpin.component';
 
 export const routes: Routes = [
     {
@@ -25,5 +26,10 @@ export const routes: Routes = [
         path:'login',
         title:'Login',
         component:LoginPageComponent
+    },
+    {
+        path:'mpin',
+        title:'Login',
+        component:MpinComponent
     }
 ];
